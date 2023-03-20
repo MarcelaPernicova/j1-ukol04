@@ -28,10 +28,8 @@ public class Sportka {
     public void zamichat() {
         //TODO zamíchat osudí
         Collections.shuffle(osudi);
-        int[] num = new int[osudi.size()];
-        for (int i = 1; i < osudi.size(); i++) {
-            num[i] = osudi.get(i);
-        }
+
+
     }
 
     /**
@@ -56,7 +54,7 @@ public class Sportka {
         //TODO Vrátit sedmé číslo z osudí.
 
 
-        return vylosovanaCisla().indexOf(7);
+        return osudi.get(7);
     }
 }
 
