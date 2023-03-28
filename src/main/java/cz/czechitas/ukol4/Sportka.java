@@ -41,7 +41,7 @@ public class Sportka {
     public List<Integer> vylosovanaCisla() {
         //TODO Vrátit seznam prvních 6 čísel z osudí.
 
-        List<Integer> top6 = new ArrayList<Integer>(osudi.subList(Math.max(osudi.size() - 6, 0), osudi.size()));
+        List<Integer> top6 = new ArrayList<Integer>(osudi.subList(0,6));
         return top6;
     }
 
@@ -54,7 +54,7 @@ public class Sportka {
         //TODO Vrátit sedmé číslo z osudí.
 
 
-        return osudi.get(7);
+        return osudi.get(6);
     }
 }
 
